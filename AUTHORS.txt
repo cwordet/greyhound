@@ -1,0 +1,16 @@
+Greyhound Project
+
+Here is a list of people that have contributed in some way towards
+the Greyhound project.
+
+
+Lead Developer and Maintainer
+-----------------------------
+Marcos Douglas B. dos Santos <mdbs99 at delfire.net>
+ 
+
+Contributors
+-----------------------------
+Luciano Souza (luchyanus)
+Silvio Clecio (silvioprog)
+Mario Ray Mahardhika (leledumbo)

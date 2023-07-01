@@ -1,0 +1,181 @@
+Release notes
+==========================================================
+
+
+(2013-10-06)
+
+- Auto scroll for Table links (master/detail).
+- TghSQLHandler.OnException event was removed.
+
+
+(2013-09-18)
+
+- TghSQLTable has a new Alias property. 
+- TghSQLTable.Reuse was removed.
+- Version 0.1.9
+
+(2013-09-13)
+
+- Now TghSQLConnector class inherit form TghSQLHandler: 
+  You can use Script/Params property and Open/Execute method using connector instance directly.
+- Many more improvements.
+- Version 0.1.8
+
+
+(2013-05-28)
+
+- The TghSQLEventHandler was fused in TghSQLHandler class.
+- New TghSQLHandler.OnException property to catch all exceptions.
+- Now TghSQLClient and TghSQLLib classes inherit from TghSQLHandler.
+- Now TghSQLTable class inherit form TghSQLClient.
+- Deleted TghSQLTable.DataSet property. Instead use Open(DS) method inherit from TghSQLHandler class.
+
+
+(2013-05-13)
+
+- Renamed GreyhoundLCL package name to GreyhoundExt.
+
+
+(2013-04-27)
+
+- TghSQLStatement: New ParamsCheck specifies whether the parameters is regenerated when the Script property changes.
+- TghSQLClient: Implemented Params support for batch scripts.
+- New ghFile unit to work with Files and Directories.
+
+
+(2013-04-03)
+
+- Started the new version 0.1.6 in dev-0.1.6 branch.
+- All names of the units have been modified to use only the prefix "gh" instead of "gh_" to be more Pascal style.
+
+
+(2013-03-29)
+
+- Now TghSQLTable class inherits from TghSQLHandler.
+- New TghSQLEventHandler class inherits from TghSQLHandler.
+- Renamed TghSQLConstraint OwnerTable property to just Table.
+- Renamed gh_global unit name to gh_classes.
+- Version 0.1.4
+
+
+(2013-03-25)
+
+- Now TghSQLLib inherits from TghSQLHandler.
+- Implemented PacketRecords property in TghSQLHandler.
+- Now is possible to use t.Script.Text to get a DataSet using your own SQL.
+- Using a real version.
+- Many more improvements.
+- Version 0.1.4
+
+
+(2013-03-17)
+
+- The Greyhound package was moved to /packages directory.
+- Created a new greyhound_zeos package.
+- You can make M-N relationship using a sub query in Where method.
+- Many more improvements.
+- Version 0.1.3
+
+
+(2013-02-24)
+
+- The gh_pack file was renamed to greyhound (the gh_pack will continue existing some time).
+- Tests were created using FPCUnit framework.
+- Version 0.1.2
+
+
+(2013-01-05)
+
+- New TghIBLib/TghFirebirdLib class for IB/Firebird support;
+- Implemented sequence/generator support;
+- New events for Table;
+- Many more improvements.
+
+
+(2012-12-10)
+
+- New IghDataSet and IghDataSetResolver interfaces;
+- ZEOS works better now;
+- New support for JSON using Adapter pattern;
+- Released 0.1.1 version;
+- Many more bug fixes and improvements.
+
+
+(2012-11-21)
+
+- The runtime package was created;
+- Renamed all DB classes to SQL classes;
+- Some methods was cut (t.LoadFromFile/SaveToFile, etc);
+- The co.Broker property was renamed to co.Lib;
+- Created gh_data unit;
+- Now gh_sql uses gh_data;
+- Get AutoInc values automatically (sqlite and mssql);
+- Many more bug fixes and improvements.
+
+
+(2012-08-20)
+
+- Renamed t.DataSetToQuery method name to t.Transform;
+- Better method names to TghDBConstraintList;
+- New TghDBQuery class to use instead TSQLQuery;
+
+
+(2012-08-12)[2]
+
+- Now TghDBConnectorBroker inherits from TghDBObject.
+- The new TghDBConnectorBroker interface is compatible with TghDBConnector because they have a SQL property too but the class is TghDBSQLHandler, no TghDBSQL;
+
+
+(2012-08-12)
+
+- Implemented TghDBSQLHandler class;
+- Implemented some events to TghDBSQLHandler;
+- Now TghDBConnectorBroker inherits from TghDBSQLHandler;
+- Removed TghDBConnectorBroker.Open method;
+- Removed TghDBConnectorBroker.Execute method;
+- Implemented TghDBSQLdbBroker.InternalOpen method;
+- Implemented TghDBSQLdbBroker.InternalExecute method;
+
+(2012-08-06)
+
+- Started TghDBTableAdapter class;
+- Started new JSON support using TghDBTableAdapter class;
+- Renamed gh_dbsqldbbroker unit to gh_dbsqldb;
+- Renamed gh_dbzeosbroker unit to gh_dbzeos;
+- Cleanup;
+
+
+(2012-07-01)
+
+- Support for Constraints: Default, Unique and Check constraints.
+- Implemented t.Constraints property.
+
+
+(2012-06-12)
+
+- Changed t.WhereFmt('', []) to t.Where('', []); overload.
+- Implemented t.Relations[] and t.Links[] properties.
+- Implemented TghDBTableList class
+- Changed all TFPHashObjectList table fields to TghDBTableList class;
+- Removed Contnrs unit dependency.
+- Removed Variants unit dependency.
+- All examples were updated.
+
+
+(2012-06-05)
+
+- TghDBConnector class was renamed to TghDBConnector.
+- co.SetDBLibClass method was renamed to SetBrokerClass.
+- TghDBLib class was renamed to TghDBBroker.
+- TghDBSQLdbLib was renamed to TghDBSQLdbBroker.
+- TghDBZeosLib was renamed to TghDBZeosBroker.
+- gh_dbsqldblib unit was renamed to gh_dbsqldbbroker.
+- gh_dbzeoslib unit was renamed to gh_dbzeosbroker.
+- Table: methods like Close, Open, First, Next, Select, Where, etc returns the table itself.
+- t.Connection was renamed to t.Connector
+- Implemented t.Commit, t.Rollback and t.Cancel
+- t.Apply is deprecated. Use t.Commit instead.
+- All examples were updated.
+
+
+----------------------------------------------------------

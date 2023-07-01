@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="Greyhound"/>
+    <Author Value="Marcos Douglas B. dos Santos"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <IncludeFiles Value="..\src"/>
+        <OtherUnitFiles Value="..\src"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Other>
+        <CompilerMessages>
+          <MsgFileName Value=""/>
+        </CompilerMessages>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Description Value="Greyhound runtime package."/>
+    <License Value="See the file LICENSE, included in this distribution, for details about the copyright."/>
+    <Version Minor="2"/>
+    <Files Count="6">
+      <Item1>
+        <Filename Value="..\src\ghsqldblib.pas"/>
+        <UnitName Value="ghSQLdbLib"/>
+      </Item1>
+      <Item2>
+        <Filename Value="..\src\ghdata.pas"/>
+        <UnitName Value="ghData"/>
+      </Item2>
+      <Item3>
+        <Filename Value="..\src\ghdef.inc"/>
+        <Type Value="Include"/>
+      </Item3>
+      <Item4>
+        <Filename Value="..\src\ghjson.pas"/>
+        <UnitName Value="ghJSON"/>
+      </Item4>
+      <Item5>
+        <Filename Value="..\src\ghsql.pas"/>
+        <UnitName Value="ghSQL"/>
+      </Item5>
+      <Item6>
+        <Filename Value="..\src\ghclasses.pas"/>
+        <UnitName Value="ghClasses"/>
+      </Item6>
+    </Files>
+    <Type Value="RunTimeOnly"/>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>
